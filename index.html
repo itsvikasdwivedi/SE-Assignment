@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,15 +7,34 @@
     <title>Web Engage</title>
 </head>
 <link rel="stylesheet" href="./index.css">
-<body>
-    <div>
-        <div>
 
+<body>
+    <div id="container">
+        <div class="image-stack">
+            <div class="image-stack__item image-stack__item--bottom">
+                <img src="./assets/PSD_Image_1675397166338.jpg" alt="">
+            </div>
+            <div class="image-stack__item image-stack__item--top">
+                <img src="./assets/PSD_Image_1675280734217.png" alt="">
+            </div>
         </div>
-        <div>
-            
+        <div class="form-stack">
+            <div class="heading">
+                <h1>Get a FREE</h1>
+                <p class="para" >consultation with an expert</p>
+            </div>
+            <form name="myform" onsubmit="handleSubmit();" action="./talktous.html">
+                <input id="user-email" type="email" name="user" placeholder="Enter Your Email" required>
+                <br>
+                <input id="user-mob" type="number" name="mobile"
+                    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                    type="number" maxlength=10>
+                <br>
+                <input type="submit" value="Talk To Us &#8594;">
+            </form>
         </div>
     </div>
 </body>
+
 </html>
 <script src="./index.js"></script>
