@@ -20,13 +20,15 @@
         </div>
         <div class="form-stack">
             <div class="heading">
+                <img src="./assets/logo.png" alt="">
                 <h1>Get a FREE</h1>
-                <p class="para" >consultation with an expert</p>
+                <h3 class="para" >consultation with an expert</h3>
             </div>
             <form name="myform" onsubmit="handleSubmit();" action="./talktous.html">
                 <input id="user-email" type="email" name="user" placeholder="Enter Your Email" required>
                 <br>
                 <input id="user-mob" type="number" name="mobile"
+                placeholder="Enter Your mobile"
                     oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                     type="number" maxlength=10>
                 <br>
